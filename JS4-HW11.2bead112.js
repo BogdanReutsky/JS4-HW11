@@ -1,0 +1,2 @@
+let e=document.querySelector(".hours"),t=document.querySelector(".minutes"),n=document.querySelector(".seconds"),o=document.querySelector(".message"),r=document.querySelector(".button"),l=3600;r.addEventListener("click",()=>{l-=60});let c=setInterval(()=>{if(l<=1800&&(o.textContent="Half time passed"),l<=0){clearInterval(c),o.textContent="END";return}let r=Math.floor((l-=1)%86400/3600),u=Math.floor(l%3600/60),s=l%60;e.textContent=s<10?"0"+u:r,t.textContent=s<10?"0"+u:u,n.textContent=s<10?"0"+s:s},1e3);
+//# sourceMappingURL=JS4-HW11.2bead112.js.map
